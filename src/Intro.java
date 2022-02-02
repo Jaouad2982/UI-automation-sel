@@ -7,14 +7,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Intro {
 	public static void main(String[]args) {
+	// this is from basics. 
 	String title = "Rahul Shetty Academy";
-	System.setProperty("webdriver.chrome.driver", "hiding the path to chromedriver");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\jd\\Desktop\\chDriver\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	// open a page
 	driver.get("https://rahulshettyacademy.com/#/index");
 	// getting the title of the page using getTitle
 	System.out.println(driver.getTitle());
-		
+	// clicking on the login btn, verifiying whether an error will be displayed. when entered the wrong info
+	driver.findElement(By.className("register-btn")).click();
+	// filling out the form and getting the error message displayed
+	driver.findElement(By.id("email")).sendKeys("random@email.ramdom");
+	driver.findElement(By.id("password")).sendKeys("psst");
+	driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+	//
+	System.out.println(driver.findElement(By.cssSelector(".bodySmall:nth-child(1)")).getText());
+	}
+	
+	//lets add a method that does the work
+public static void check(WebDriver driver, WebElement elem) {
 		
 	}
 }
