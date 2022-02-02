@@ -5,17 +5,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Intro {
 	public static void main(String[]args) {
 	// this is from basics. 
+	// this is not to desgin an automation framework but just to get practice, frameworks will come later
 	String title = "Rahul Shetty Academy";
-	String url = "https://rahulshettyacademy.com/#/index";
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\jd\\Desktop\\chDriver\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
-	check(driver,url);
+	//check(driver,url);
+	
+	select(driver);
 	}
 	
+
+public static void select(WebDriver d) {
+	d.get("https://rahulshettyacademy.com/AutomationPractice/");
+	WebElement elem = d.findElement(By.id("dropdown-class-example"));
+	elem.click();
+	Select s = new Select(elem);
+	// by index 
+	s.selectByIndex(2);
+	//we can also select by visible text or by value 
+}
+
 	//lets add a method that does the work
 public static void check(WebDriver driver,String url) {
 	// open a page
