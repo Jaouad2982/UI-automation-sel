@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -21,6 +22,11 @@ public class TestNGTut {
 		System.out.println("Mobile check");
 	}
 	
+	
+	@Test(dataProvider= "getData")
+	public void TestData(String name,String secondPara) {
+		System.out.println(name + " " + secondPara);
+	}
 	@AfterTest
 	public void MobileAftertest() {
 		System.out.println("After test");
@@ -29,6 +35,16 @@ public class TestNGTut {
 	@BeforeTest
 	public void beforetest() {
 		System.out.println("Before test");
+	}
+	
+	@DataProvider
+	public Object getData() {
+		Object [] [] obj = new Object [2][2];
+		obj[0][0] ="Ja";
+		obj [0][1] = "la";
+		return obj;
+		
+		
 	}
 
 }

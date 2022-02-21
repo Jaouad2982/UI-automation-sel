@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-21T15:59:18 EST" name="Suite" finished-at="2022-02-21T15:59:18 EST" duration-ms="107">
+  <suite started-at="2022-02-21T16:07:49 EST" name="Suite" finished-at="2022-02-21T16:07:49 EST" duration-ms="126">
     <groups>
     </groups>
-    <test started-at="2022-02-21T15:59:18 EST" name="Test" finished-at="2022-02-21T15:59:18 EST" duration-ms="107">
+    <test started-at="2022-02-21T16:07:49 EST" name="Test" finished-at="2022-02-21T16:07:49 EST" duration-ms="126">
       <class name="tests.TestNGTut">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:tests.TestNGTut@2f8dad04]" started-at="2022-02-21T15:59:18 EST" name="beforetest" finished-at="2022-02-21T15:59:18 EST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:tests.TestNGTut@649bec2e]" started-at="2022-02-21T16:07:49 EST" name="beforetest" finished-at="2022-02-21T16:07:49 EST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="getNamefromPara(java.lang.String)[pri:0, instance:tests.TestNGTut@2f8dad04]" started-at="2022-02-21T15:59:18 EST" name="getNamefromPara" finished-at="2022-02-21T15:59:18 EST" duration-ms="19" status="PASS">
+        <test-method signature="TestData(java.lang.String, java.lang.String)[pri:0, instance:tests.TestNGTut@649bec2e]" started-at="2022-02-21T16:07:49 EST" name="TestData" data-provider="getData" finished-at="2022-02-21T16:07:49 EST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[la]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestData -->
+        <test-method signature="TestData(java.lang.String, java.lang.String)[pri:0, instance:tests.TestNGTut@649bec2e]" started-at="2022-02-21T16:07:49 EST" name="TestData" data-provider="getData" finished-at="2022-02-21T16:07:49 EST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestData -->
+        <test-method signature="getNamefromPara(java.lang.String)[pri:0, instance:tests.TestNGTut@649bec2e]" started-at="2022-02-21T16:07:49 EST" name="getNamefromPara" finished-at="2022-02-21T16:07:49 EST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNamefromPara -->
-        <test-method is-config="true" signature="MobileAftertest()[pri:0, instance:tests.TestNGTut@2f8dad04]" started-at="2022-02-21T15:59:18 EST" name="MobileAftertest" finished-at="2022-02-21T15:59:18 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="MobileAftertest()[pri:0, instance:tests.TestNGTut@649bec2e]" started-at="2022-02-21T16:07:49 EST" name="MobileAftertest" finished-at="2022-02-21T16:07:49 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileAftertest -->
