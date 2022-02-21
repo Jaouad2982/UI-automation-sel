@@ -8,6 +8,12 @@ import org.testng.annotations.Test;
 
 public class TestNGTut {
 	
+	//we can use  methods in testng.xml to include or exclude the methods that we dont need or need 
+	//<class name="....."><methods> <include ...../> <methods/><class/>
+	//
+	//
+	//
+	
 	@Parameters("firstName")
 	@Test
 	public void getNamefromPara(String firstName) {
