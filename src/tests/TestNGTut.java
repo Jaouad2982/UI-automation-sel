@@ -28,6 +28,20 @@ public class TestNGTut {
 		System.out.println("Mobile check");
 	}
 	
+	@Test(dependsOnMethods= {"......"})
+	public void dependsOn() {
+		System.out.println("depends on a specific method");
+	}
+	
+	@Test(enabled=false)
+	public void enableAMethod() {
+		System.out.println("USe enable true to enable or enable to false to disable a method");
+	}
+	
+	@Test(timeOut=40)
+	public void timeOutATest() {
+		System.out.println("Wait time out a specific tast/ test");
+	}
 	
 	@Test(dataProvider= "getData")
 	public void TestData(String name,String secondPara) {
@@ -43,6 +57,7 @@ public class TestNGTut {
 		System.out.println("Before test");
 	}
 	
+
 	@DataProvider
 	public Object getData() {
 		Object [] [] obj = new Object [2][2];
